@@ -1,14 +1,117 @@
 .header {
-    
+  background: no-repeat url("../images/header.png");
+  height: 100%;
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  border: 0;
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  max-height: 300px;
+  align-items: center;
+  margin: auto;
+}
+
+.header__text {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1110px;
+  margin: auto;
+}
+
+.header__address {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  padding-top: auto;
+  min-width: 202px;
+  min-height: 70px;
+  margin: 0;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  padding-top: auto;
+  min-width: 107px;
+  color: #fff;
+  min-height: 70px;
+  margin: 0px;
+  text-decoration: none;
 }
 
 .header__menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    list-style-type: none;
-    font-size: 19px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1060px;
+  height: 70px;
+  align-self: center;
+  list-style-type: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: auto;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+.header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  min-width: 277px;
+  border-right: solid 1px white;
+}
+
+.header__item-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  min-width: 277px;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 593px;
+  text-decoration: none;
+  min-width: 436px;
+  margin: auto;
+}
+
+.header__button-card,
+.header__button-try {
+  background-color: #99862a;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  min-height: 50px;
+  min-width: 203px;
+  line-height: 20px;
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  background-color: #282828;
 }
