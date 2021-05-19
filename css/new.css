@@ -1,11 +1,9 @@
 .new {
   display: flex;
   justify-content: center;
-  background-color: #e6e3c4;
+  background-color: var(--white-background);
   height: 1038px;
   max-width: 1920px;
-
-  background-color: #e6e3c4;
   align-content: center;
 }
 
@@ -18,8 +16,8 @@
   margin: auto;
   margin-top: 80px;
   margin-bottom: 80px;
-  border-top: 1px solid #998431;
-  border-bottom: 1px solid #998431;
+  border-top: 1px solid var(--yellow-background);
+  border-bottom: 1px solid var(--yellow-background);
 }
 
 .new__text-left {
@@ -29,36 +27,33 @@
   align-items: flex-start;
   min-height: 758px;
   max-width: 445px;
-
 }
 
 .new__text-pictures {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   min-height: 758px;
   max-width: 540px;
-
 }
 
 .new__text-bottom-images {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .new__line {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid var(--gray-background);
   min-width: 160px;
 }
 
 .new__first-description {
   max-width: 445px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #282828;
+  color: var(--gray-background);
 }
 
 .new__spreadsheet {
@@ -77,8 +72,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid #282828;
-  border-right: 1px solid #282828;
+  border-bottom: 1px solid var(--gray-background);
+  border-right: 1px solid var(--gray-background);
   min-width: 75px;
   min-height: 73px;
   margin: auto;
@@ -89,7 +84,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-right: 1px solid #282828;
+  border-right: 1px solid var(--gray-background);
   min-width: 75px;
   min-height: 73px;
   margin: auto;
@@ -97,7 +92,7 @@
 }
 
 .new__item {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid var(--gray-background);
   min-width: 370px;
   min-height: 73px;
   text-align: left;
@@ -114,20 +109,18 @@
 }
 
 .new__description {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  color: #282828;
+  color: var(--gray-background);
 }
 
 .new__last-description {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #282828;
+  color: var(--gray-background);
 }
 
 .new__glass-image {
@@ -145,11 +138,21 @@
   max-height: 228px;
 }
 
-.new_button-more {
-  background-color: #998431;
+.new__button-more {
+  background-color: var(--yellow-background);
   text-decoration: none;
-  color: white;
+  color: var(--white);
   border: none;
   min-width: 254px;
   height: 50px;
+}
+
+.new__button-more:hover {
+  background-color: var(--gray-background);
+  color: var(--yellow-background);
+}
+
+.new__button-more:active {
+  background-color: var(--yellow-background);
+  color: var(--white);
 }

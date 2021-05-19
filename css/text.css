@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 900px;
   height: 100%;
-  background-color: #282828;
+  background-color: var(--gray-background);
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,27 +17,26 @@
   align-items: center;
   min-height: 656px;
   min-width: 1110px;
-  border: 3px solid #c4c4c4;
-  color: white;
+  border: 3px solid var(--border-line);
+  color: var(--white);
 }
 
 .text__slogan {
-  font-family: Playfair Display;
+  font-family: "Playfair Display", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
 }
 
 .text__line {
-    align-self: center;
-    border: 0.5px solid white;
-    width: 160px;
+  align-self: center;
+  border: 0.5px solid var(--white);
+  width: 160px;
 }
 .text__text {
   margin-top: 40px;
   max-width: 733px;
-  color: white;
- 
+  color: var(--white);
 }
 
 .text__wineglass {
@@ -45,5 +44,5 @@
   width: 160px;
   margin-top: 50px;
   align-self: right;
-
+  background-image: url("../images/wineglass.png");
 }

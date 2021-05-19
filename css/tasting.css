@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282828;
+  background-color: var(--gray-background);
   min-height: 768px;
 }
 
@@ -12,10 +12,10 @@
   align-items: flex-start;
   max-width: 1110px;
   min-height: 538px;
-  border-left: 3px solid #c4c4c4;
-  border-bottom: 3px solid #c4c4c4;
-  border-right: 3px solid #c4c4c4;
-  border-top: 3px solid #c4c4c4;
+  border-left: 3px solid var(--border-line);
+  border-bottom: 3px solid var(--border-line);
+  border-right: 3px solid var(--border-line);
+  border-top: 3px solid var(--border-line);
 }
 
 .tasting__center {
@@ -29,27 +29,26 @@
 }
 
 .tasting__degustation {
-  font-family: Playfair Display;
+  font-family: "Playfair Display", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 150%;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 }
 .tasting__line {
   width: 118px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
 }
 
 .tasting__description {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .tasting__form {
@@ -61,10 +60,10 @@
 .tasting__form-phone {
   min-width: 255px;
   min-height: 30px;
-  color: #ffffff;
-  background: #282828;
+  color: var(--white);
+  background: var(--gray-background);
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--white);
   padding: 0;
   margin: 0;
 }
@@ -76,19 +75,29 @@
 
 .tasting__form-address {
   min-width: 540px;
-  color: #ffffff;
-  background: #282828;
+  color: var(--white);
+  background: var(--gray-background);
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--white);
   min-height: 30px;
 }
 
 .tasting__form-button {
   min-width: 540px;
   min-height: 50px;
-  color: #ffffff;
-  background: #282828;
-  border: 1px solid #ffffff;
+  color: var(--white);
+  background: var(--gray-background);
+  border: 1px solid var(--white);
+}
+
+.tasting__form-button:hover {
+  color: var(--white);
+  background: var(--yellow-background);
+}
+
+.tasting__form-button:active {
+  color: var(--white);
+  background: var(--gray-background);
 }
 
 .tasting__grapes {

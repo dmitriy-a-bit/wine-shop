@@ -4,7 +4,6 @@
   min-height: 900px;
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -21,8 +20,16 @@
 }
 
 .header__text {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
+}
+
+.header__text:hover {
+  color: var(--yellow-background);
+}
+
+.header__text:active {
+  color: var(--menu-active);
 }
 
 .header__info {
@@ -35,7 +42,7 @@
 .header__address {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   font-size: 13px;
   padding-top: auto;
   min-width: 202px;
@@ -50,10 +57,17 @@
   font-size: 13px;
   padding-top: auto;
   min-width: 107px;
-  color: #fff;
   min-height: 70px;
   margin: 0px;
   text-decoration: none;
+}
+
+.header__phone a:hover {
+  color: var(--yellow-background);
+}
+
+.header__phone a:active {
+  color: var(--menu-active);
 }
 
 .header__menu {
@@ -66,10 +80,10 @@
   list-style-type: none;
   font-size: 14px;
   letter-spacing: 0.05em;
-  color: #fff;
+  color: var(--white);
   margin: auto;
-  border-top: solid 1px white;
-  border-bottom: solid 1px white;
+  border-top: solid 1px var(--white);
+  border-bottom: solid 1px var(--white);
 }
 
 .header__item {
@@ -78,7 +92,7 @@
   align-items: center;
   min-height: 70px;
   min-width: 277px;
-  border-right: solid 1px white;
+  border-right: solid 1px var(--white);
 }
 
 .header__item-last {
@@ -101,8 +115,8 @@
 
 .header__button-card,
 .header__button-try {
-  background-color: #99862a;
-  color: #fff;
+  background-color: var(--yellow-background);
+  color: var(--white);
   border: none;
   padding: 15px 30px;
   min-height: 50px;
@@ -110,8 +124,14 @@
   line-height: 20px;
 }
 
-.text {
-  height: 100%;
-  width: 100%;
-  background-color: #282828;
+.header__button-card:hover,
+.header__button-try:hover {
+  background-color: var(--gray-background);
+  color: var(--yellow-background);
+}
+
+.header__button-card:active,
+.header__button-try:active {
+  background-color: var(--yellow-background);
+  color: var(--white);
 }

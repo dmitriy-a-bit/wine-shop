@@ -1,5 +1,4 @@
 .footer {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -9,7 +8,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #998431;
+  background-color: var(--yellow-background);
   min-height: 220px;
   width: 100%;
 }
@@ -27,14 +26,23 @@
   align-items: center;
   min-width: 1110px;
   min-height: 60px;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
   padding: 0;
+  list-style: none;
 }
 
 .footer__text {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
+}
+
+.footer__text:hover {
+  color: var(--gray-background);
+}
+
+.footer__text:active {
+  color: var(--white);
 }
 
 .footer__info {
@@ -44,37 +52,78 @@
   align-self: center;
   min-width: 1110px;
   max-height: 60px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--white);
 }
 
 .footer__info-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #ffffff;
+  color: var(--white);
   min-height: 60px;
   width: 100%;
   line-height: 150%;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid var(--white);
+}
+
+.footer__info-item a:hover,
+.footer__info-site a:hover {
+  color: rgb(34, 34, 34);
+}
+
+.footer__info-item a:active,
+.footer__info-site a:active {
+  color: var(--white);
 }
 
 .footer__info-social {
   display: flex;
   justify-content: space-around;
-  color: #ffffff;
+  align-items: center;
   min-height: 60px;
   width: 100%;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid var(--white);
 }
 
+.footer__info-social-youtube {
+  background-image: url("../images/youtube.svg");
+  color: var(--white);
+  width: 24px;
+  height: 16px;
+}
+
+.footer__info-social-vk {
+  background-image: url("../images/vk.svg");
+  color: var(--white);
+  width: 24px;
+  height: 14px;
+}
+
+.footer__info-social-fb {
+  background-image: url("../images/fb.svg");
+  color: var(--white);
+  width: 12px;
+  height: 20px;
+}
+
+.footer__info-social-youtube a:hover {
+  color: var(--gray-background);
+}
+
+.footer__info-social-youtube a:active {
+  color: red;
+}
+
+/* .footer__info-social-vk:hover,
+.footer__info-social-fb:hover */
+
 .footer__info-site {
-  font-family: Montserrat;
   font-style: normal;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
