@@ -85,7 +85,25 @@
   border-right: 1px solid var(--white);
 }
 
-.footer__info-social-youtube {
+.footer__info-social-youtube,
+.footer__info-social-vk,
+.footer__info-social-fb {
+  fill: var(--white);
+}
+
+.footer__info-social-youtube:hover,
+.footer__info-social-vk:hover,
+.footer__info-social-fb:hover {
+  fill: var(--gray-background);
+}
+
+.footer__info-social-youtube:active,
+.footer__info-social-vk:active,
+.footer__info-social-fb:active {
+  fill: var(--white);
+}
+
+.footer__info-social-youtube4 {
   background-image: url("../images/youtube.svg");
   color: var(--white);
   width: 24px;

@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: var(--white-background);
   height: 1038px;
-  max-width: 1920px;
+  width: 100%;
   align-content: center;
 }
 
