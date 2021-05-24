@@ -46,3 +46,36 @@
   align-self: right;
   background-image: url("../images/wineglass.png");
 }
+
+@media (max-width: 1440px) {
+  .text__border {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text__border {
+    min-width: 700px;
+  }
+  
+  .text__text {
+    max-width: 600px;
+  }
+  
+  .text__slogan {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text__border {
+    min-width: 600px;
+  }
+
+  .text__slogan {
+    font-size: 24px;
+  }
+  .text__text {
+    max-width: 550px;
+  }
+}

@@ -15,7 +15,6 @@
   border-left: 3px solid var(--border-line);
   border-bottom: 3px solid var(--border-line);
   border-right: 3px solid var(--border-line);
-  border-top: 3px solid var(--border-line);
 }
 
 .tasting__center {
@@ -25,7 +24,20 @@
   align-items: center;
   max-width: 540px;
   min-height: 450px;
-  margin-top: -60px;
+}
+
+.tasting__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasting__title::before,
+.tasting__title::after {
+  content: "";
+  width: 118px;
+  height: 3px;
+  background-color: var(--border-line);
 }
 
 .tasting__degustation {
@@ -36,7 +48,9 @@
   line-height: 150%;
   text-align: center;
   color: var(--white);
+  width: 500px;
 }
+
 .tasting__line {
   width: 118px;
   border: 1px solid var(--white);
@@ -103,13 +117,86 @@
 .tasting__grapes {
   max-width: 260px;
   max-height: 260px;
-  margin-top: -60px;
   margin-right: 100px;
 }
 
 .tasting__barrel {
   max-width: 260px;
   max-height: 260px;
-  margin-top: -65px;
   margin-left: 100px;
+}
+
+@media (max-width: 1440px) {
+  .tasting__main {
+    max-width: 900px;
+  }
+  .tasting__degustation {
+    width: 470px;
+  }
+
+  .tasting__title::before,
+  .tasting__title::after {
+    width: 60px;
+  }
+  .tasting__grapes {
+    max-width: 184px;
+    max-height: 184px;
+    margin-right: 30px;
+  }
+
+  .tasting__barrel {
+    max-width: 184px;
+    max-height: 184px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tasting__main {
+    max-width: 700px;
+  }
+  .tasting__degustation {
+    width: 450px;
+  }
+
+  .tasting__title::before,
+  .tasting__title::after {
+    width: 30px;
+  }
+  .tasting__grapes {
+    max-width: 154px;
+    max-height: 184px;
+    margin-right: 5px;
+  }
+
+  .tasting__barrel {
+    max-width: 150px;
+    max-height: 184px;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tasting__main {
+    max-width: 600px;
+  }
+  .tasting__degustation {
+    width: 430px;
+  }
+
+  .tasting__title::before,
+  .tasting__title::after {
+    width: 30px;
+  }
+  .tasting__grapes {
+    max-width: 124px;
+    max-height: 124px;
+    margin-right: -30px;
+  }
+
+  .tasting__barrel {
+    max-width: 124px;
+    max-height: 124px;
+    margin-left: -30px;
+  }
 }

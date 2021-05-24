@@ -141,16 +141,31 @@
 
                         <div class="new__text-pictures">
                             <picture class="new__glass-image">
-                                <source srcset="images/wineglass-photo.png" media="(min-width: 600px)">
+                                <source srcset="images/wineglass-photo_2x.png" media="(min-width: 1440px)" width=100%
+                                    alt="wineglass">
+                                <source srcset="images/wineglass-photo.png" media="(min-width: 1024px)" width=100%
+                                    alt="wineglass">
+                                <source srcset="images/wineglass-photo.png" media="(min-width: 678px)" width=100% height=100%
+                                    alt="wineglass">
                                 <img src="images/wineglass-photo.png" alt="wineglass">
                             </picture>
                             <div class="new__text-bottom-images">
                                 <picture class="new__bottles-left">
-                                    <source srcset="images/bottles.png" media="(min-width: 600px)">
+                                    <source srcset="images/bottles_2x.png" media="(min-width: 1600px)" width=100%
+                                        alt="bottles on the shelf">
+                                    <source srcset="images/bottles.png" media="(min-width: 1024px)" width=100%
+                                        alt="bottles on the shelf">
+                                    <source srcset="images/bottles.png" media="(min-width: 678px)" width=100%
+                                        alt="bottles on the shelf">
                                     <img src="images/bottles.png" alt="bottles">
                                 </picture>
                                 <picture class="new__bottles-right">
-                                    <source srcset="images/bottles-2.png" media="(min-width: 600px)">
+                                    <source srcset="images/bottles-2_2x.png" media="(min-width: 1600px)" width=100%
+                                        alt="bottles">
+                                    <source srcset="images/bottles-2.png" media="(min-width: 1024px)" width=100%
+                                        alt="bottles">
+                                    <source srcset="images/bottles-2.png" media="(min-width: 678px)" width=100%
+                                        alt="bottles">
                                     <img src="images/bottles-2.png" alt="bottles">
                                 </picture>
                             </div>
@@ -168,7 +183,10 @@
                     <div class="tasting__main">
                         <img class="tasting__grapes" src="images/grapes.png" alt="grapes">
                         <div class="tasting__center">
-                            <h2 class="tasting__degustation">Запись на дегустацию</h2>
+                            <div class="tasting__title">
+                                <h2 class="tasting__degustation">Запись на дегустацию</h2>
+                            </div>
+
                             <div class="tasting__line"></div>
                             <p class="tasting__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Feugiat
@@ -218,9 +236,21 @@
                         <a href="tel:88121234567">8 (812) 123-45-67</a>
                     </div>
                     <div class="footer__info-social">
-                        <a class="footer__info-social-youtube" href="https://youtube.com"></a>
-                        <a class="footer__info-social-vk" href="https://vk.com"></a>
-                        <a class="footer__info-social-fb" href="https://facebook.com"></a>
+                        <a href="https://youtube.com">
+                            <svg class="footer__info-social-youtube" width="24" height="16">
+                                <use xlink:href="images/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="https://vk.com">
+                            <svg class="footer__info-social-vk" width="24" height="14">
+                                <use xlink:href="images/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com">
+                            <svg class="footer__info-social-fb" width="12" height="20">
+                                <use xlink:href="images/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
                     </div>
                     <div class="footer__info-site">
                         <a href="le-corte.ru">© le-corte.ru</a>

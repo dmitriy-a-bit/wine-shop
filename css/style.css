@@ -31,3 +31,21 @@ a {
   --menu-active: #775814;
   --border-line: #c4c4c4;
 }
+
+@media (max-width: 1440px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+  }
+}
