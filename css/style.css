@@ -44,8 +44,15 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .wrapper {
-    max-width: 767px;
+    max-width: 768px;
   }
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    max-width: 414px;
+  }
+}
 }

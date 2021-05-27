@@ -57,17 +57,17 @@
   .text__border {
     min-width: 700px;
   }
-  
+
   .text__text {
     max-width: 600px;
   }
-  
+
   .text__slogan {
     font-size: 28px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .text__border {
     min-width: 600px;
   }
@@ -77,5 +77,22 @@
   }
   .text__text {
     max-width: 550px;
+  }
+}
+
+@media (max-width: 414px) {
+  .text {
+    min-height: 700px;
+  }
+
+  .text__border {
+    min-width: 380px;
+  }
+
+  .text__slogan {
+    font-size: 17px;
+  }
+  .text__text {
+    max-width: 340px;
   }
 }

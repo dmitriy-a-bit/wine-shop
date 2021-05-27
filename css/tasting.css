@@ -70,6 +70,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .tasting__form-name,
 .tasting__form-phone {
   min-width: 255px;
@@ -176,7 +177,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tasting__main {
     max-width: 600px;
   }
@@ -198,5 +199,45 @@
     max-width: 124px;
     max-height: 124px;
     margin-left: -30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .tasting {
+    min-height: 600px;
+  }
+
+  .tasting__main {
+    max-width: 380px;
+    border-top: 3px solid var(--border-line);
+  }
+
+  .tasting__center {
+    max-width: 360px;
+  }
+
+  .tasting__degustation {
+    width: 360px;
+  }
+
+  .tasting__title::before,
+  .tasting__title::after {
+    width: 0px;
+  }
+  .tasting__grapes,
+  .tasting__barrel {
+    display: none;
+  }
+
+  .tasting__form-name,
+  .tasting__form-phone {
+    min-width: 80px;
+  }
+
+  .tasting__form-button {
+    min-width: 140px;
+  }
+  .tasting__form-address {
+    min-width: 200px;
   }
 }

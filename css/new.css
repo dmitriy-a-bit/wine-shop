@@ -186,7 +186,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .new__text {
     max-width: 600px;
   }
@@ -203,5 +203,33 @@
   .new__text-pictures {
     max-width: 45%;
     min-height: 400px;
+  }
+}
+
+@media (max-width: 414px) {
+  .new {
+    height: 1400px;
+  }
+  .new__text {
+    max-width: 380px;
+    max-height: 100%;
+    flex-direction: column;
+  }
+  .new__text-left {
+    align-items: center;
+    max-width: 90%;
+  }
+  .new__item h3,
+  .new__item-last h3 {
+    font-size: 14px;
+  }
+
+  .new__description {
+    font-size: 13px;
+  }
+
+  .new__text-pictures {
+    max-width: 80%;
+    min-height: 380px;
   }
 }
