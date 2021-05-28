@@ -139,6 +139,27 @@
     min-width: 600px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer__nav {
+    max-height: 200px;
+    }
+  
+    .footer__menu,
+    .footer__info {
+      min-width: 300px;
+      flex-direction: column;
+      border-top: none;
+      border-bottom: none;
+      max-height: 200px;
+    }
+  
+    .footer__info-item,
+    .footer__info-social {
+      border-right: none;
+    }
+}
+
 @media (max-width: 414px) {
   .footer__nav {
   max-height: 200px;

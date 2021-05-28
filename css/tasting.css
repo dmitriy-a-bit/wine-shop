@@ -171,34 +171,73 @@
   }
 
   .tasting__barrel {
-    max-width: 150px;
+    max-width: 20%;
     max-height: 184px;
-    margin-left: -30px;
+    margin-left: -35px;
   }
 }
 
 @media (max-width: 768px) {
   .tasting__main {
     max-width: 600px;
+    width: 80%;
   }
   .tasting__degustation {
-    width: 430px;
+    min-width: 60%;
+    font-size: 24px;
+  }
+
+  .tasting__center {
+    max-width: 80%;
   }
 
   .tasting__title::before,
   .tasting__title::after {
-    width: 30px;
+    width: 5%;
   }
   .tasting__grapes {
     max-width: 124px;
     max-height: 124px;
     margin-right: -30px;
+    padding-right: auto;
   }
 
   .tasting__barrel {
-    max-width: 124px;
-    max-height: 124px;
-    margin-left: -30px;
+    max-width: 20%;
+    max-height: 20%;
+    margin-left: -50px;
+  }
+
+  .tasting__form-name,
+  .tasting__form-phone {
+    min-width: 50%;
+  }
+
+  .tasting__form-button {
+    min-width: 30%;
+  }
+  .tasting__form-address {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tasting__main {
+    border-top: 3px solid var(--border-line);
+  }
+
+  .tasting__center {
+    max-width: 80%;
+  }
+
+  .tasting__title::before,
+  .tasting__title::after {
+    width: 0px;
+  }
+
+  .tasting__grapes,
+  .tasting__barrel {
+    display: none;
   }
 }
 
@@ -213,11 +252,11 @@
   }
 
   .tasting__center {
-    max-width: 360px;
+    max-width: 80%;
   }
 
   .tasting__degustation {
-    width: 360px;
+    width: 320px;
   }
 
   .tasting__title::before,
@@ -229,6 +268,9 @@
     display: none;
   }
 
+  .tasting__form {
+    max-width: 90%;
+  }
   .tasting__form-name,
   .tasting__form-phone {
     min-width: 80px;
@@ -238,6 +280,6 @@
     min-width: 140px;
   }
   .tasting__form-address {
-    min-width: 200px;
+    min-width: 150px;
   }
 }

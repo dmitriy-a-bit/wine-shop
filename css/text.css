@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   .text {
     min-height: 700px;
   }
@@ -94,5 +94,22 @@
   }
   .text__text {
     max-width: 340px;
+  }
+}
+
+@media (max-width: 414px) {
+  .text {
+    min-height: 800px;
+  }
+
+  .text__border {
+    min-width: 240px;
+  }
+
+  .text__slogan {
+    font-size: 17px;
+  }
+  .text__text {
+    max-width: 260px;
   }
 }
