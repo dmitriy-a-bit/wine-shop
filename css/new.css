@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  min-height: 758px;
+  max-height: 460px;
   max-width: 45%;
 }
 
@@ -122,16 +122,6 @@
   color: var(--gray-background);
 }
 
-.new__bottles-left {
-  max-width: 47%;
-  max-height: 228px;
-}
-
-.new__bottles-right {
-  max-width: 47%;
-  max-height: 228px;
-}
-
 .new__button-more {
   background-color: var(--yellow-background);
   text-decoration: none;
@@ -149,6 +139,16 @@
 .new__button-more:active {
   background-color: var(--yellow-background);
   color: var(--white);
+}
+
+.new__glass-image {
+  width: 320px;
+}
+
+.new__bottles-left,
+.new__bottles-right {
+  max-height: 228px;
+  width: 150px;
 }
 
 @media (max-width: 1440px) {
@@ -204,6 +204,16 @@
     max-width: 45%;
     min-height: 400px;
   }
+
+  .new__glass-image {
+    width: 270px;
+  }
+
+  .new__bottles-left,
+  .new__bottles-right {
+    max-height: 228px;
+    width: 130px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -247,6 +257,15 @@
     align-items: center;
     max-width: 90%;
   }
+
+  .new__item,
+  .new__item-last,
+  .new__year,
+  .new__year-last {
+    line-height: 90%;
+    min-height: 100px;
+  }
+
   .new__item h3,
   .new__item-last h3 {
     font-size: 14px;
@@ -259,5 +278,15 @@
   .new__text-pictures {
     max-width: 80%;
     min-height: 380px;
+  }
+
+  .new__glass-image {
+    width: 240px;
+  }
+
+  .new__bottles-left,
+  .new__bottles-right {
+    max-height: 228px;
+    width: 115px;
   }
 }

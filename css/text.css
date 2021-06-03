@@ -108,6 +108,8 @@
 
   .text__slogan {
     font-size: 17px;
+    padding: 5%;
+    text-align: center;
   }
   .text__text {
     max-width: 260px;

@@ -208,6 +208,10 @@
     margin-left: -50px;
   }
 
+  .tasting__form-top {
+    flex-direction: column;
+  }
+
   .tasting__form-name,
   .tasting__form-phone {
     min-width: 50%;
@@ -256,7 +260,7 @@
   }
 
   .tasting__degustation {
-    width: 320px;
+    max-width: 150px;
   }
 
   .tasting__title::before,
