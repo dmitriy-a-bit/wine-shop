@@ -185,8 +185,9 @@
     border: none;
   } 
 
-  .header__item {
-    min-width: 140px;
+  .header__item,
+  .header__item-last {
+    min-width: 50%;
     border: none;
   }
 }
