@@ -181,5 +181,12 @@
 
   .header__menu {
     padding-left: 0px;
+    flex-wrap: wrap;
+    border: none;
   } 
+
+  .header__item {
+    min-width: 140px;
+    border: none;
+  }
 }
