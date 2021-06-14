@@ -99,7 +99,7 @@
 
 @media (max-width: 414px) {
   .text {
-    min-height: 800px;
+    min-height: 860px;
   }
 
   .text__border {
@@ -113,5 +113,9 @@
   }
   .text__text {
     max-width: 260px;
+  }
+
+  .text__wineglass {
+    margin-bottom: 20px;
   }
 }
